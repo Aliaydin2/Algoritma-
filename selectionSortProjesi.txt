@@ -1,0 +1,33 @@
+       
+               [22,27,16,2,18,6] -> Insertion Sort
+
+               [22, 27, 16, 2, 18, 6]
+                (2)        (22)
+1.Asama        [2, 27, 16, 22, 18, 6] --> 1.sıra en küçük yapıldı   (n adet) kontrol
+                  (6)             (27)
+2.Asama        [2, 6, 16, 22, 18, 27] --> 2.sıra en küçük yapıldı   (n-1) kontrol
+                      ()
+3.Asama        [2, 6 ,16, 22, 18, 27] --> 3.sıra en küçük yapıldı   (n-2) kontrol       
+                         (18)(22)
+4.Asama        [2, 6, 16, 18, 22, 27] --> 4.sıra en küçük yapıldı   (n-3) kontrol
+                              ()
+5.Asama        [2, 6, 16, 18, 27, 22] --> 5.sıra en küçük yapıldı   (n-4) kontrol
+                                  ()
+6.Asama        [2, 6, 16, 18, 22, 27] --> 6.sıra en küçük yapıldı   (1 adet) kontrol
+
+
+        18 sayısı 4. aşamada yerini bulduğu için AVERAGE CASE kapsamındadır. //
+
+        Big-O  =>    n.(n+1) / 2 => (n^2 + n)/2 => n^2  => O(n^2) => O(36)  //
+
+        ------------------------
+
+            [7, 3, 5, 8, 2, 9, 4, 15, 16]
+            (2)         (7)
+1.Asama     [2, 3, 5, 8, 7, 9, 4, 15, 16]
+               ( )
+2.Asama     [2, 3, 5, 8, 7, 9, 4, 15, 16]
+                  (4)         (5)
+3.Asama     [2, 3, 4, 8, 7, 9, 5, 15, 16]
+                     (5)      (8)
+4.Asama     [2, 3, 4, 5, 7, 9, 8, 15, 16]
